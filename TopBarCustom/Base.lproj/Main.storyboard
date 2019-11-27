@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cuS-nj-Ut6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cuS-nj-Ut6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e7D-sm-IZm">
-                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="758"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="IUg-gl-yXU">
                                     <size key="itemSize" width="50" height="50"/>
@@ -51,7 +51,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="5np-KV-RAu" secondAttribute="top" id="HWw-2X-kdY"/>
                             <constraint firstItem="5np-KV-RAu" firstAttribute="leading" secondItem="e7D-sm-IZm" secondAttribute="leading" id="jcK-vK-b0b"/>
                             <constraint firstItem="e7D-sm-IZm" firstAttribute="top" secondItem="5np-KV-RAu" secondAttribute="bottom" id="w4W-9a-k7v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e7D-sm-IZm" secondAttribute="bottom" id="wlH-Mz-qq6"/>
+                            <constraint firstAttribute="bottom" secondItem="e7D-sm-IZm" secondAttribute="bottom" id="wlH-Mz-qq6"/>
                             <constraint firstItem="5np-KV-RAu" firstAttribute="trailing" secondItem="e7D-sm-IZm" secondAttribute="trailing" id="wsf-yv-jfI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="835" y="102"/>
         </scene>
-        <!--Top Bar Menu Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="OaM-Xn-uoV">
             <objects>
-                <navigationController storyboardIdentifier="TopBarMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="cuS-nj-Ut6" customClass="TopBarMenuNavigationController" customModule="TopBarCustom" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cuS-nj-Ut6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Byi-Xr-h1B">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -1,10 +1,7 @@
 //
 //  SceneDelegate.swift
 //  TopBarCustom
-//
-//  Created by Umer Jabbar on 26/11/2019.
-//  Copyright © 2019 Sample. All rights reserved.
-//
+
 
 import UIKit
 

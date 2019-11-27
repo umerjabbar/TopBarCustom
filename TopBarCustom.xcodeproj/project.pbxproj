@@ -9,39 +9,33 @@
 /* Begin PBXBuildFile section */
 		0DE13C0B238CE341000D7E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C0A238CE341000D7E83 /* AppDelegate.swift */; };
 		0DE13C0D238CE341000D7E83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C0C238CE341000D7E83 /* SceneDelegate.swift */; };
-		0DE13C0F238CE341000D7E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C0E238CE341000D7E83 /* ViewController.swift */; };
 		0DE13C12238CE341000D7E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE13C10238CE341000D7E83 /* Main.storyboard */; };
 		0DE13C14238CE344000D7E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE13C13238CE344000D7E83 /* Assets.xcassets */; };
 		0DE13C17238CE344000D7E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE13C15238CE344000D7E83 /* LaunchScreen.storyboard */; };
 		0DE13C2C238CE869000D7E83 /* TopBarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C1F238CE868000D7E83 /* TopBarMenuView.swift */; };
 		0DE13C2D238CE869000D7E83 /* TopBarMeunCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C20238CE868000D7E83 /* TopBarMeunCollectionCell.swift */; };
-		0DE13C2E238CE869000D7E83 /* TopBarMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C22238CE868000D7E83 /* TopBarMenuNavigationController.swift */; };
 		0DE13C2F238CE869000D7E83 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C23238CE868000D7E83 /* MainCollectionViewCell.swift */; };
 		0DE13C30238CE869000D7E83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C24238CE868000D7E83 /* MainViewController.swift */; };
 		0DE13C31238CE869000D7E83 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C26238CE868000D7E83 /* Extension.swift */; };
 		0DE13C32238CE869000D7E83 /* GlobalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C27238CE868000D7E83 /* GlobalClass.swift */; };
 		0DE13C33238CE869000D7E83 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C29238CE869000D7E83 /* TestViewModel.swift */; };
-		0DE13C34238CE869000D7E83 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C2B238CE869000D7E83 /* ParentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DE13C07238CE341000D7E83 /* TopBarCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopBarCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE13C0A238CE341000D7E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE13C0C238CE341000D7E83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0DE13C0E238CE341000D7E83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0DE13C11238CE341000D7E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DE13C13238CE344000D7E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DE13C16238CE344000D7E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DE13C18238CE344000D7E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DE13C1F238CE868000D7E83 /* TopBarMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarMenuView.swift; sourceTree = "<group>"; };
 		0DE13C20238CE868000D7E83 /* TopBarMeunCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarMeunCollectionCell.swift; sourceTree = "<group>"; };
-		0DE13C22238CE868000D7E83 /* TopBarMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarMenuNavigationController.swift; sourceTree = "<group>"; };
 		0DE13C23238CE868000D7E83 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DE13C24238CE868000D7E83 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0DE13C26238CE868000D7E83 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		0DE13C27238CE868000D7E83 /* GlobalClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalClass.swift; sourceTree = "<group>"; };
 		0DE13C29238CE869000D7E83 /* TestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
-		0DE13C2B238CE869000D7E83 /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +70,9 @@
 			children = (
 				0DE13C0A238CE341000D7E83 /* AppDelegate.swift */,
 				0DE13C0C238CE341000D7E83 /* SceneDelegate.swift */,
-				0DE13C0E238CE341000D7E83 /* ViewController.swift */,
-				0DE13C25238CE868000D7E83 /* Helper */,
 				0DE13C23238CE868000D7E83 /* MainCollectionViewCell.swift */,
 				0DE13C24238CE868000D7E83 /* MainViewController.swift */,
-				0DE13C21238CE868000D7E83 /* Navigation */,
-				0DE13C2A238CE869000D7E83 /* Parent */,
+				0DE13C25238CE868000D7E83 /* Helper */,
 				0DE13C1E238CE868000D7E83 /* TopBarMenu */,
 				0DE13C28238CE869000D7E83 /* ViewModel */,
 				0DE13C10238CE341000D7E83 /* Main.storyboard */,
@@ -101,14 +92,6 @@
 			path = TopBarMenu;
 			sourceTree = "<group>";
 		};
-		0DE13C21238CE868000D7E83 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				0DE13C22238CE868000D7E83 /* TopBarMenuNavigationController.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
 		0DE13C25238CE868000D7E83 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,14 +107,6 @@
 				0DE13C29238CE869000D7E83 /* TestViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		0DE13C2A238CE869000D7E83 /* Parent */ = {
-			isa = PBXGroup;
-			children = (
-				0DE13C2B238CE869000D7E83 /* ParentViewController.swift */,
-			);
-			path = Parent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,14 +182,11 @@
 			files = (
 				0DE13C31238CE869000D7E83 /* Extension.swift in Sources */,
 				0DE13C2F238CE869000D7E83 /* MainCollectionViewCell.swift in Sources */,
-				0DE13C34238CE869000D7E83 /* ParentViewController.swift in Sources */,
-				0DE13C0F238CE341000D7E83 /* ViewController.swift in Sources */,
 				0DE13C33238CE869000D7E83 /* TestViewModel.swift in Sources */,
 				0DE13C0B238CE341000D7E83 /* AppDelegate.swift in Sources */,
 				0DE13C0D238CE341000D7E83 /* SceneDelegate.swift in Sources */,
 				0DE13C32238CE869000D7E83 /* GlobalClass.swift in Sources */,
 				0DE13C2C238CE869000D7E83 /* TopBarMenuView.swift in Sources */,
-				0DE13C2E238CE869000D7E83 /* TopBarMenuNavigationController.swift in Sources */,
 				0DE13C2D238CE869000D7E83 /* TopBarMeunCollectionCell.swift in Sources */,
 				0DE13C30238CE869000D7E83 /* MainViewController.swift in Sources */,
 			);
@@ -361,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D72YU8FCS8;
+				DEVELOPMENT_TEAM = 68Z43GCQJY;
 				INFOPLIST_FILE = TopBarCustom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,7 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D72YU8FCS8;
+				DEVELOPMENT_TEAM = 68Z43GCQJY;
 				INFOPLIST_FILE = TopBarCustom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

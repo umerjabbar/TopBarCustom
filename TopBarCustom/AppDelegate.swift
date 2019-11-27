@@ -1,10 +1,7 @@
 //
 //  AppDelegate.swift
 //  TopBarCustom
-//
-//  Created by Umer Jabbar on 26/11/2019.
-//  Copyright © 2019 Sample. All rights reserved.
-//
+
 
 import UIKit
 
@@ -16,11 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        //window = UIWindow(frame: UIScreen.main.bounds)
-        //window?.rootViewController = TopBarMenuNavigationController(rootViewController: MainViewController())
-        //window?.backgroundColor = .white
-        //window?.makeKeyAndVisible()
+
         
         return true
     }

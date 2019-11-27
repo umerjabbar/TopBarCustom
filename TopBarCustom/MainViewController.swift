@@ -1,14 +1,11 @@
 //
 //  MainViewController.swift
 //  TopBarMenuDemo
-//
-//  Created by Min on 2018/12/2.
-//  Copyright © 2018 Min. All rights reserved.
-//
+
 
 import UIKit
 
-class MainViewController: ParentViewController {
+class MainViewController: UIViewController {
     
     var titleList = [DemoTestViewModel]() {
         didSet {
@@ -32,12 +29,6 @@ class MainViewController: ParentViewController {
         self.mainCollectionView.delegate = self
         self.mainCollectionView.backgroundColor = .clear
         self.mainCollectionView.isPagingEnabled = true
-//        let flowLayout = UICollectionViewFlowLayout()
-//        flowLayout.itemSize = CGSize(width:  self.mainCollectionView.bounds.width, height: self.mainCollectionView.bounds.height)
-//        flowLayout.minimumLineSpacing = 0
-//        flowLayout.minimumInteritemSpacing = 0
-//        flowLayout.scrollDirection = .horizontal
-//        self.mainCollectionView.setCollectionViewLayout(flowLayout, animated: true)
         self.mainCollectionView.showsHorizontalScrollIndicator = false
         self.mainCollectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
     }
@@ -45,14 +36,13 @@ class MainViewController: ParentViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setUserInterface()
-        self.selectItem(2)
+        self.selectItem(0)
     }
     
     // MARK: - private Method
     
     private func setUserInterface() {
         navigationItem.title = "TOPBAR"
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "setData", style: .plain, target: self, action: #selector(leftButtonDidPressed))
         titleList = [.red, .green, .colorForBlue, .orange, .lightGray]
     }
     
@@ -69,10 +59,6 @@ class MainViewController: ParentViewController {
     
     @objc private func leftButtonDidPressed() {
         titleList = [.red, .green, .colorForBlue, .orange, .lightGray]
-    }
-    
-    func setInitialSpace (){
-        
     }
     
     func selectItem(_ index: Int){
