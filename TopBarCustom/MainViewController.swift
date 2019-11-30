@@ -7,6 +7,8 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    //Your data array
+    
     var titleList = [DemoTestViewModel]() {
         didSet {
             topBarMenuView.titleList = titleList
@@ -42,6 +44,8 @@ class MainViewController: UIViewController {
     
     // MARK: - private Method
     
+    //Update data here
+    
     private func setUserInterface() {
         navigationItem.title = "TOPBAR"
         titleList = [.red, .green, .colorForBlue, .orange, .lightGray]
@@ -55,17 +59,11 @@ class MainViewController: UIViewController {
         let indexPath = IndexPath(item: index, section: 0)
         mainCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
-    
-    // MARK: - action Method
-    
-    @objc private func leftButtonDidPressed() {
-        titleList = [.red, .green, .colorForBlue, .orange, .lightGray]
-    }
+
     
     func selectItem(_ index: Int){
         let indexPath = IndexPath(item: index, section: 0)
         self.didSelectTopBar(index: index)
-//        self.mainCollectionView.scrollToItem(at: indexPath, at: ., animated: true)
         self.topBarMenuView.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         self.topBarMenuView.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         if let cell = self.topBarMenuView.collectionView.cellForItem(at: indexPath) {

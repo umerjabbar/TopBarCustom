@@ -54,7 +54,6 @@
 		0DB6CE132392D59B00C6A150 /* CollectionView Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0DB6CE192392D86E00C6A150 /* Top Cell */,
 				0DB6CE142392D5A900C6A150 /* Bottom Cell */,
 			);
 			path = "CollectionView Cells";
@@ -67,13 +66,6 @@
 				0DB6CE162392D5F400C6A150 /* MainCollectionViewCell.xib */,
 			);
 			path = "Bottom Cell";
-			sourceTree = "<group>";
-		};
-		0DB6CE192392D86E00C6A150 /* Top Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Top Cell";
 			sourceTree = "<group>";
 		};
 		0DE13BFE238CE341000D7E83 = {

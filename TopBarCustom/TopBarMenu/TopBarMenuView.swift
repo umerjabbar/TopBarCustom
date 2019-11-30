@@ -11,6 +11,8 @@ protocol TopBarMeunDelegate: class {
 
 class TopBarMenuView: UIView {
     
+    //Use Custom data 
+    
     var titleList = [DemoTestViewModel]() {
         didSet {
             guard !titleList.isEmpty else {
@@ -59,9 +61,10 @@ class TopBarMenuView: UIView {
         return layout
     }()
     
+    //Use Custom Color for top bar
+    
     lazy var bottomBarView: UIView = {
         let view = UIView()
-//        view.backgroundColor = GlobalClass.RGBA(r: 76, g: 174, b: 218, a: 100)
         view.backgroundColor = .white
         return view
     }()
@@ -92,6 +95,8 @@ extension TopBarMenuView: UICollectionViewDataSource {
 }
 
     // MARK: - UICollectionViewCdlegateFlowLayout
+
+    //Use Custom Size for top text
 
 extension TopBarMenuView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
