@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DB6CE172392D5F400C6A150 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB6CE152392D5F400C6A150 /* MainCollectionViewCell.swift */; };
+		0DB6CE182392D5F400C6A150 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB6CE162392D5F400C6A150 /* MainCollectionViewCell.xib */; };
 		0DE13C0B238CE341000D7E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C0A238CE341000D7E83 /* AppDelegate.swift */; };
 		0DE13C0D238CE341000D7E83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C0C238CE341000D7E83 /* SceneDelegate.swift */; };
 		0DE13C12238CE341000D7E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE13C10238CE341000D7E83 /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		0DE13C17238CE344000D7E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE13C15238CE344000D7E83 /* LaunchScreen.storyboard */; };
 		0DE13C2C238CE869000D7E83 /* TopBarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C1F238CE868000D7E83 /* TopBarMenuView.swift */; };
 		0DE13C2D238CE869000D7E83 /* TopBarMeunCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C20238CE868000D7E83 /* TopBarMeunCollectionCell.swift */; };
-		0DE13C2F238CE869000D7E83 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C23238CE868000D7E83 /* MainCollectionViewCell.swift */; };
 		0DE13C30238CE869000D7E83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C24238CE868000D7E83 /* MainViewController.swift */; };
 		0DE13C31238CE869000D7E83 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C26238CE868000D7E83 /* Extension.swift */; };
 		0DE13C32238CE869000D7E83 /* GlobalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE13C27238CE868000D7E83 /* GlobalClass.swift */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DB6CE152392D5F400C6A150 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		0DB6CE162392D5F400C6A150 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		0DE13C07238CE341000D7E83 /* TopBarCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopBarCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE13C0A238CE341000D7E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE13C0C238CE341000D7E83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +34,6 @@
 		0DE13C18238CE344000D7E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DE13C1F238CE868000D7E83 /* TopBarMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarMenuView.swift; sourceTree = "<group>"; };
 		0DE13C20238CE868000D7E83 /* TopBarMeunCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarMeunCollectionCell.swift; sourceTree = "<group>"; };
-		0DE13C23238CE868000D7E83 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DE13C24238CE868000D7E83 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0DE13C26238CE868000D7E83 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		0DE13C27238CE868000D7E83 /* GlobalClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalClass.swift; sourceTree = "<group>"; };
@@ -49,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DB6CE132392D59B00C6A150 /* CollectionView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0DB6CE192392D86E00C6A150 /* Top Cell */,
+				0DB6CE142392D5A900C6A150 /* Bottom Cell */,
+			);
+			path = "CollectionView Cells";
+			sourceTree = "<group>";
+		};
+		0DB6CE142392D5A900C6A150 /* Bottom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0DB6CE152392D5F400C6A150 /* MainCollectionViewCell.swift */,
+				0DB6CE162392D5F400C6A150 /* MainCollectionViewCell.xib */,
+			);
+			path = "Bottom Cell";
+			sourceTree = "<group>";
+		};
+		0DB6CE192392D86E00C6A150 /* Top Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Top Cell";
+			sourceTree = "<group>";
+		};
 		0DE13BFE238CE341000D7E83 = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +95,9 @@
 		0DE13C09238CE341000D7E83 /* TopBarCustom */ = {
 			isa = PBXGroup;
 			children = (
+				0DB6CE132392D59B00C6A150 /* CollectionView Cells */,
 				0DE13C0A238CE341000D7E83 /* AppDelegate.swift */,
 				0DE13C0C238CE341000D7E83 /* SceneDelegate.swift */,
-				0DE13C23238CE868000D7E83 /* MainCollectionViewCell.swift */,
 				0DE13C24238CE868000D7E83 /* MainViewController.swift */,
 				0DE13C25238CE868000D7E83 /* Helper */,
 				0DE13C1E238CE868000D7E83 /* TopBarMenu */,
@@ -170,6 +197,7 @@
 				0DE13C17238CE344000D7E83 /* LaunchScreen.storyboard in Resources */,
 				0DE13C14238CE344000D7E83 /* Assets.xcassets in Resources */,
 				0DE13C12238CE341000D7E83 /* Main.storyboard in Resources */,
+				0DB6CE182392D5F400C6A150 /* MainCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,12 +209,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DE13C31238CE869000D7E83 /* Extension.swift in Sources */,
-				0DE13C2F238CE869000D7E83 /* MainCollectionViewCell.swift in Sources */,
 				0DE13C33238CE869000D7E83 /* TestViewModel.swift in Sources */,
 				0DE13C0B238CE341000D7E83 /* AppDelegate.swift in Sources */,
 				0DE13C0D238CE341000D7E83 /* SceneDelegate.swift in Sources */,
 				0DE13C32238CE869000D7E83 /* GlobalClass.swift in Sources */,
 				0DE13C2C238CE869000D7E83 /* TopBarMenuView.swift in Sources */,
+				0DB6CE172392D5F400C6A150 /* MainCollectionViewCell.swift in Sources */,
 				0DE13C2D238CE869000D7E83 /* TopBarMeunCollectionCell.swift in Sources */,
 				0DE13C30238CE869000D7E83 /* MainViewController.swift in Sources */,
 			);

@@ -30,7 +30,8 @@ class MainViewController: UIViewController {
         self.mainCollectionView.backgroundColor = .clear
         self.mainCollectionView.isPagingEnabled = true
         self.mainCollectionView.showsHorizontalScrollIndicator = false
-        self.mainCollectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
+//        self.mainCollectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
+        self.mainCollectionView.register(UINib(nibName: MainCollectionViewCell.identifier, bundle: .main), forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -153,15 +154,15 @@ extension MainViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCollectionViewCell.identifier, for: indexPath) as! MainCollectionViewCell
         switch titleList[indexPath.row] {
         case .red:
-            cell.backgroundColor = .red
+            cell.customView.backgroundColor = .red
         case .orange:
-            cell.backgroundColor = .orange
+            cell.customView.backgroundColor = .orange
         case .colorForBlue:
-            cell.backgroundColor = .blue
+            cell.customView.backgroundColor = .blue
         case .green:
-            cell.backgroundColor = .green
+            cell.customView.backgroundColor = .green
         case .lightGray:
-            cell.backgroundColor = .lightGray
+            cell.customView.backgroundColor = .lightGray
         }
         return cell
     }
