@@ -7,21 +7,17 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    //Your data array
+    @IBOutlet weak var topBarMenuView: TopBarMenuView!
+    @IBOutlet weak var mainCollectionView: UICollectionView!
     
-    var titleList = [DemoTestViewModel]() {
+    var titleList = [String]() {
         didSet {
             topBarMenuView.titleList = titleList
-            mainCollectionView.reloadData()
         }
     }
-    
     fileprivate var selectIndex: CGFloat = 0
     fileprivate var isTopBarSelect = false
     fileprivate var topBarSelectIndex: CGFloat = 0
-    
-    @IBOutlet weak var topBarMenuView: TopBarMenuView!
-    @IBOutlet weak var mainCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,26 +25,20 @@ class MainViewController: UIViewController {
         self.topBarMenuView.delegate = self
         self.mainCollectionView.dataSource = self
         self.mainCollectionView.delegate = self
-        self.mainCollectionView.backgroundColor = .clear
-        self.mainCollectionView.isPagingEnabled = true
-        self.mainCollectionView.showsHorizontalScrollIndicator = false
-//        self.mainCollectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
         self.mainCollectionView.register(UINib(nibName: MainCollectionViewCell.identifier, bundle: .main), forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
+        self.navigationItem.title = "TOPBAR"
+        self.titleList = ["red", "green", "colorForBlue", "orange", "lightGray"]
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setUserInterface()
         self.selectItem(0)
     }
-    
-    // MARK: - private Method
     
     //Update data here
     
     private func setUserInterface() {
-        navigationItem.title = "TOPBAR"
-        titleList = [.red, .green, .colorForBlue, .orange, .lightGray]
+        
     }
     
     private func getTopBarCell(item: Int) -> UICollectionViewCell {
@@ -150,17 +140,19 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCollectionViewCell.identifier, for: indexPath) as! MainCollectionViewCell
-        switch titleList[indexPath.row] {
-        case .red:
+        switch indexPath.row {
+        case 0:
             cell.customView.backgroundColor = .red
-        case .orange:
+        case 1:
             cell.customView.backgroundColor = .orange
-        case .colorForBlue:
+        case 2:
             cell.customView.backgroundColor = .blue
-        case .green:
+        case 3:
             cell.customView.backgroundColor = .green
-        case .lightGray:
+        case 4:
             cell.customView.backgroundColor = .lightGray
+        default:
+            cell.customView.backgroundColor = .purple
         }
         return cell
     }

@@ -13,7 +13,7 @@ class TopBarMenuView: UIView {
     
     //Use Custom data 
     
-    var titleList = [DemoTestViewModel]() {
+    var titleList = [String]() {
         didSet {
             guard !titleList.isEmpty else {
                 bottomBarView.isHidden = true
@@ -22,7 +22,7 @@ class TopBarMenuView: UIView {
             bottomBarView.isHidden = false
             collectionView.reloadData()
             collectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: .left)
-            let width = GlobalClass.getTextframe(text: titleList[0].title).width + 45
+            let width = GlobalClass.getTextframe(text: titleList[0]).width + 45
             bottomBarView.frame = CGRect(x: 0, y: bounds.height - 2, width: width, height: 2)
         }
     }
@@ -89,7 +89,7 @@ extension TopBarMenuView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TopBarMeunCollectionCell.identifier, for: indexPath) as! TopBarMeunCollectionCell
-        cell.titleType = titleList[indexPath.row]
+        cell.titleString = titleList[indexPath.row]
         return cell
     }
 }
@@ -100,7 +100,7 @@ extension TopBarMenuView: UICollectionViewDataSource {
 
 extension TopBarMenuView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = GlobalClass.getTextframe(text: titleList[indexPath.row].title).width + 45
+        let width = GlobalClass.getTextframe(text: titleList[indexPath.row]).width + 45
         return CGSize(width: width, height: bounds.height)
     }
     

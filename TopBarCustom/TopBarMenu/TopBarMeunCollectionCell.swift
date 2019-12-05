@@ -7,9 +7,10 @@ import UIKit
 
 class TopBarMeunCollectionCell: UICollectionViewCell {
     
-    var titleType: DemoTestViewModel = .red {
+    var titleString: String? {
         didSet {
-            titleLabel.text = titleType.title.uppercased()
+            if titleString == nil { return }
+            titleLabel.text = titleString?.uppercased()
         }
     }
     
@@ -20,6 +21,12 @@ class TopBarMeunCollectionCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.titleLabel.textColor = .lightGray
+        self.isSelected = false
     }
     
     override var isSelected: Bool {
@@ -45,7 +52,7 @@ class TopBarMeunCollectionCell: UICollectionViewCell {
         label.textAlignment = .center
 //        label.font = UIFont(name: GlobalClass.avenirNext_Regular, size: 10)
         label.font = UIFont.systemFont(ofSize: 15)
-        label.textColor = .systemGray6
+        label.textColor = .lightGray
         return label
     }()
 }
