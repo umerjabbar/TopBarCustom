@@ -111,40 +111,46 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDelegate
         }
     }
     
+    //here we are giving selectIndex a index value
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let index = scrollView.contentOffset.x / UIScreen.main.bounds.width
         let indexPath = IndexPath(item: Int(index), section: 0)
         
         topBarMenuView.collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         let cell = getTopBarCell(item: Int(index))
+        
         if topBarMenuView.bottomBarView.frame.minX != cell.frame.minX || topBarMenuView.bottomBarView.frame.size.width != cell.frame.width {
             UIView.animate(withDuration: 0.3) { [weak self] in
                 self?.topBarMenuView.bottomBarView.frame.origin.x = cell.frame.minX
                 self?.topBarMenuView.bottomBarView.frame.size.width = cell.frame.width
-                
-            }
+            }       //here we are animating the top bar bottom view (indicator)
         }
-        selectIndex = index
+        selectIndex = index         //here we are giving selectIndex a index value
     }
     
+    // this is called when scrolling animation ends
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        selectIndex = scrollView.contentOffset.x / UIScreen.main.bounds.width
-        isTopBarSelect = false
-        if topBarSelectIndex != 0 {
-            topBarSelectIndex = 0
+        selectIndex = scrollView.contentOffset.x / UIScreen.main.bounds.width // here we are calculating the index of cell
+        isTopBarSelect = false              //here we are giving isTopBarSelect a false value
+        if topBarSelectIndex != 0 {         //here we are checking if topBarSelectIndex is zero or not
+            topBarSelectIndex = 0           //here we are giving isTopBarSelect a zero value
         }
     }
 }
 
     // MARK: - UICollectionViewDataSource
 
+
 extension MainViewController: UICollectionViewDataSource {
+    
+    // this is a tableView function which is being used here as to give tableView a count of how many items would be there in tableView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return titleList.count
     }
     
+    // this is a tableView function which is being used here as to give a cell a view or data
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCollectionViewCell.identifier, for: indexPath) as! MainCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCollectionViewCell.identifier, for: indexPath) as! MainCollectionViewCell // this is to resuse the already created cell
         switch indexPath.row {
         case 0:
             cell.customView.backgroundColor = .red
@@ -165,10 +171,12 @@ extension MainViewController: UICollectionViewDataSource {
 
     // MARK: - TopBarMeunDelegate
 
-extension MainViewController: TopBarMeunDelegate {
-    func topBarDidSelecrIndex(index: Int) {
-        isTopBarSelect = true
-        topBarSelectIndex = CGFloat(index)
-        didSelectTopBar(index: index)
+
+extension MainViewController: TopBarMeunDelegate { // here we are implementing the TopBarMeunDelegate which contains some functions
+    func topBarDidSelecrIndex(index: Int) { // this is a function which will be triggered when top bar item is tapped
+        isTopBarSelect = true               //here we are giving isTopBarSelect a true value
+        topBarSelectIndex = CGFloat(index)  //here we are giving topBarSelectIndex a index value
+        didSelectTopBar(index: index)       //here we are calling the method of didSelectTopBar which will select and scroll of item in mainCollectionView
+        
     }
 }
